@@ -22,3 +22,10 @@ def is_float_3(int_list):
     new_list = [x for x in int_list if isinstance(x, float)]
     return len(new_list)
 
+
+# solution four
+def is_float_4(int_list):
+    count = 0
+    for item in int_list:
+        count += isinstance(item, float)
+    return count
